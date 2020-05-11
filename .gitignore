@@ -3,3 +3,9 @@
 .settings/
 target/
 chromedriver
+attribute=ping
+attribute=jsdata
+attribute-regex=data-.*
+attribute=class
+attribute=outline
+attribute=transform

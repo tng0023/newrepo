@@ -1,10 +1,10 @@
 package recheck_test;
 
-import org.junit.*;
-import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.*;
-import de.retest.recheck.*;
-import de.retest.recheck.persistence.*;
+        import org.junit.*;
+        import org.openqa.selenium.*;
+        import org.openqa.selenium.chrome.*;
+        import de.retest.recheck.*;
+        import de.retest.recheck.persistence.*;
 
 public class recheck_test {
 
@@ -13,8 +13,8 @@ public class recheck_test {
 
     @Before
     public void setUp() {
+        System.setProperty( RecheckProperties.REHUB_REPORT_UPLOAD_ENABLED_PROPERTY_KEY, "true" );
         re = new RecheckImpl();
-        System.setProperty("webdriver.chrome.silentOutput", "true");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless", "--window-size=1280,720");
         driver = new ChromeDriver(options);

@@ -10,6 +10,12 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
+    <configuration>
+        <systemPropertyVariables>
+            <de.retest.recheck.rehub.reportUploadEnabled>true</de.retest.recheck.rehub.reportUploadEnabled>
+        </systemPropertyVariables>
+    </configuration>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
